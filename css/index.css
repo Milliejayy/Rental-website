@@ -1,0 +1,286 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: poppins;
+  scroll-behavior: smooth;
+  font-size: 18px;
+}
+.header {
+  z-index: 100;
+  margin: auto;
+  padding-top: 20px;
+  position: fixed;
+  width: 100%;
+}
+.scrolled {
+  background-color: rgba(51, 48, 48, 0.589);
+}
+.toggle-btn {
+  display: none;
+  font-size: 25px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  /* color: white; */
+}
+.navelements {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar {
+  width: 80%;
+  margin: auto;
+  position: sticky;
+  padding: 50px 0px;
+}
+#logo {
+  background-color: rgba(255, 255, 255, 0.842);
+  border-radius: 30%;
+  padding: 6px;
+  width: 30px;
+}
+.ul {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  list-style: none;
+}
+.ul a {
+  text-decoration: none;
+}
+li a {
+  color: white;
+  border-radius: 10px;
+  border-bottom: 1px solid #fab500;
+  padding: 5px;
+  font-weight: 700;
+}
+li a:hover {
+  background-color: transparent;
+  background-color: rgba(172, 171, 171, 0.582);
+  transition-duration: 3s;
+}
+.herosection {
+  width: 100%;
+  margin: auto;
+  height: 100vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(7, 22, 134, 0.5),
+      rgba(81, 6, 179, 0.5)
+    ),
+    url(../images/pexels-curtis-adams-1694007-24245749.webp);
+  background-blend-mode: multiply;
+  background-color: rgba(241, 236, 236, 0.791);
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  align-content: center;
+}
+.h3 {
+  margin-top: 20%;
+  padding-bottom: 2%;
+  color: white;
+  font-size: 70px;
+  font-family: "Roboto", sans-serif;
+}
+.p {
+  color: white;
+}
+.btn {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  /* font-size: 15px; */
+  font-weight: 500;
+  background-color: rgba(172, 171, 171, 0.582);
+  margin-top: 3%;
+}
+.btn a {
+  text-decoration: none;
+  color: white;
+}
+.btn:hover {
+  color: #fab500;
+  background-color: transparent;
+  transition-duration: 3s;
+  transition-property: all;
+  text-decoration: underline;
+}
+.btn a:hover {
+  color: #fab500;
+}
+.bold {
+  color: #fab500;
+}
+
+.section {
+  width: 100%;
+  margin: auto;
+  color: rgb(0, 0, 0);
+  padding-top: 25px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.innerdiv {
+  width: 80%;
+  margin: auto;
+}
+.h2 {
+  font-size: 40px;
+}
+.gridcontainer {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 300px;
+  justify-items: center;
+  gap: 50px 30px;
+}
+.images {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* ======Section2========== */
+.section2 {
+  width: 100%;
+  background-color: #706e6a5d;
+}
+.tiredofbuying {
+  padding: 50px 0px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  gap: 50px;
+}
+.img1,
+.img2,
+.img3 {
+  border-radius: 20px;
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+.copy {
+  width: 60%;
+}
+.copy h2 {
+  font-size: 25px;
+}
+.div-imgs {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;
+  gap: 50px;
+}
+
+.section3 {
+  width: 100%;
+  padding-top: 3%;
+  padding-bottom: 4%;
+  margin: auto;
+}
+.flex {
+  width: 80%;
+  display: flex;
+  gap: 5%;
+  margin: auto;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  justify-items: center;
+  gap: 20px;
+}
+.gridtext p {
+  font-size: 13px;
+}
+.whyus {
+  width: 80%;
+}
+#apartment {
+  width: 350px;
+  height: 400px;
+  border-radius: 10%;
+  align-self: center;
+}
+.whyus h2 {
+  padding-bottom: 10px;
+}
+
+/* ==========FOOTER======================== */
+.footercontainer {
+  padding: 20px 0px;
+  margin: auto;
+  background-image: linear-gradient(
+    to right,
+    rgba(7, 20, 121, 0.664),
+    rgba(37, 2, 83, 0.664)
+  );
+  color: rgba(255, 255, 255, 0.712);
+  align-self: center;
+}
+.footer {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  line-height: 40px;
+}
+.footer-item h4,
+.footertext h4 {
+  color: #fab3009f;
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.footer-item a {
+  color: rgba(255, 255, 255, 0.849);
+  text-decoration: none;
+}
+.footer-item a:hover {
+  text-decoration: underline;
+  font-size: 15px;
+  transition-duration: 2s;
+}
+.footertext {
+  width: 70%;
+  line-height: 40px;
+}
+
+.copyright {
+  background-image: linear-gradient(
+    to right,
+    rgba(7, 18, 102, 0.993),
+    rgb(24, 3, 51)
+  );
+  color: rgba(255, 255, 255, 0.849);
+  padding: 10px;
+}
+#copyright {
+  width: 80%;
+  margin: auto;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+#copyrightt {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.copyright a {
+  color: white;
+}

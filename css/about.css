@@ -1,0 +1,232 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: poppins;
+    font-size: 18px;
+}
+.header {
+  z-index: 100;
+  margin: auto;
+  padding-top: 20px;
+  position: fixed;
+  width: 100%;
+}
+
+.scrolled {
+  background-color: rgba(51, 48, 48, 0.589);
+}
+.toggle-btn {
+  display: none;
+  font-size: 25px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  /* color: white; */
+}
+.navelements {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar {
+  width: 80%;
+  margin: auto;
+  position: sticky;
+  padding: 50px 0px;
+}
+#logo {
+  background-color: rgba(255, 255, 255, 0.842);
+  border-radius: 30%;
+  padding: 6px;
+  width: 30px;
+}
+.ul {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  list-style: none;
+}
+.ul a {
+  text-decoration: none;
+}
+li a {
+  color: white;
+  border-radius: 10px;
+  border-bottom: 1px solid #fab500;
+  padding: 5px;
+  font-weight: 700;
+}
+li a:hover {
+  background-color: transparent;
+  background-color: rgba(172, 171, 171, 0.582);
+  transition-duration: 3s;
+}
+.abouthero {
+  width: 100%;
+  margin: auto;
+  height: 100vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(7, 22, 134, 0.5),
+      rgba(81, 6, 179, 0.5)
+    ),
+    url(../images/camera.webp);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  align-content: center;
+}
+.h3 {
+  margin-top: 20%;
+  padding-bottom: 2%;
+  color: white;
+  font-size: 70px;
+  font-family: "Roboto", sans-serif;
+}
+.p {
+  color: white;
+}
+.btn {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  /* font-size: 15px; */
+  font-weight: 500;
+  background-color: rgba(172, 171, 171, 0.582);
+  margin-top: 3%;
+}
+.btn a {
+  text-decoration: none;
+  color: white;
+}
+.btn:hover {
+  color: #fab500;
+  background-color: transparent;
+  transition-duration: 3s;
+  transition-property: all;
+  text-decoration: underline;
+}
+.btn a:hover {
+  color: #fab500;
+}
+.bold {
+  color: #fab500;
+}
+  
+.whoweare {
+    height: 100%;
+    margin-top: 10px;
+}
+.whowearee {
+    box-shadow: 20px 15px 5px 0px rgba(29, 46, 45, 0.473);
+    background-color: #706e6907;
+    width: 80%;
+    margin: auto;
+    padding: 40px;
+    align-self: center;
+    text-align: justify;
+}
+.whowearee p {
+    font-size: 15px;
+}
+#whoweare {
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+.discoverus {
+    background-color: rgba(177, 167, 167, 0.473);
+    margin-top: 50px;
+    padding: 20px 0px;
+    align-content: center;
+}
+#discoverus {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    gap: 5%;
+}
+#h2text {
+    width: 100%;
+    align-content: center;
+}
+#h2text .h2{
+  font-size: 30px;
+}
+#house{
+  width:300px;
+  padding-top: 10px;
+  position: relative;
+}
+
+ /* ==========FOOTER======================== */
+ .footercontainer {
+  padding: 20px 0px;
+  margin: auto;
+  background-image: linear-gradient(
+        to right,
+        rgba(7, 20, 121, 0.664),
+        rgba(37, 2, 83, 0.664)
+      );
+  color: rgba(255, 255, 255, 0.712);
+  align-self: center;
+}
+.footer {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  line-height: 40px;
+}
+.footer-item h4,
+.footertext h4 {
+  color: #fab3009f;
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.footer-item a {
+  color: rgba(255, 255, 255, 0.849);
+  text-decoration: none;
+}
+.footer-item a:hover {
+  text-decoration: underline;
+  font-size: 15px;
+  transition-duration: 2s;
+}
+.footertext {
+  width: 70%;
+  line-height: 40px;
+}
+
+.copyright {
+  background-image: linear-gradient(
+      to right,
+      rgba(7, 18, 102, 0.993),
+      rgb(24, 3, 51)
+    );
+  color:rgba(255, 255, 255, 0.849);
+  
+}
+#copyright {
+  width: 80%;
+  margin: auto;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+#copyrightt{
+  display: flex;
+  justify-content: space-between; 
+  gap: 20px;
+}
+.copyright a {
+  color: white;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="shortcut icon" href="images/RENT 24 111.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/mediaquery.css">
+    <script src="forms.js"></script>
+    <script type="module" src="app.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .unhide {
+            display: none;
+        }
+
+        .other-category.unhide {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header" class="header">
+        <div class="navelements">
+            <img id="logo" src="images/RENT 24 111.png">
+            <ul class="ul">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contactus.html">Contact us</a></li>
+                <li><a href="form.html">Sign Up</a></li>
+            </ul>
+        </div>
+        <button class="toggle-btn"></button>
+    </header>
+
+    <section>
+        <section class="contactus_hero" id="hero">
+            <div class="navbar">
+                <div class="contact-us">
+                    <h3 class="h3">Sign Up</h3>
+                    <!-- <b class="bold">Rent Anything, Anytime, Anywhere !</b><br> -->
+                </div>
+            </div>
+        </section>
+
+        <section class="form">
+            <div class="innerwidth">
+                <form id="contactUsForm" onsubmit="handleSubmit(event)">
+                    <div class="formm">
+                        <label for="firstname">First Name:</label><br>
+                        <input type="text" name="firstname" class="first-name" placeholder="firstname" required><br>
+
+                        <label for="firstname">Last Name:</label><br>
+                        <input type="text" name="lastname" class="last-name" placeholder="lastname" required><br>
+
+                        <label for="phone-number">Phone Number:</label><br>
+                        <input type="number" name="phone" class="phone-number" placeholder="watsapp phone number"><br>
+
+                        <label for="email">Email:</label><br>
+                        <input type="email" name="email" class="email" placeholder="email"><br>
+
+                        <label for="location">State of Residence:</label><br>
+                        <input type="text" name="location" class="location" placeholder="location"><br><br>
+
+                        <label for=""><b>Specify Category of Items you want to Rent.</label></b><br>
+                        <input type="radio" name="category" id="accommodation" value="accommodation" required>
+                        Accommodation
+                        <br>
+                        <input type="radio" name="category" id="construction" value="constuction" required>
+                        Construction
+                        <br>
+                        <input type="radio" name="category" id="fashion" value="fashion" required> Fashion
+                        <br>
+                        <input type="radio" name="category" id="service-apartments" value="service-apartments" required>
+                        Service Apartments
+                        <br>
+                        <input type="radio" name="category" id="halls" value="halls" required>
+                        Halls
+                        <br>
+                        <input type="radio" name="category" id="event-center" value="event-center" required>
+                        Event Center
+                        <br>
+                        <input type="radio" name="category" id="electronics" value="electronics" required> Electronics
+                        <br>
+
+                        <input type="radio" name="category" id="events" value="events" required> Events
+                        <br>
+                        <input id="others" class="others" type="radio" name="category" value="others" required>
+                        Others<br>
+
+                        <div class="other-category unhide">
+                            <label for="other-category-input">Please specify:</label><br>
+                            <input type="text" name="otherCategoryValue" id="other-category-input"><br>
+                        </div>
+                        <br>
+                        <button class="click" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="footercontainer">
+            <div class="footer">
+                <div class="footertext">
+                    <h4>Rent 24</h4>
+                    <p>Your ultimate destination for renting <br><b>Any and Everything</b>.
+
+                </div>
+
+                <div class="footer-item">
+                    <h4>Quick Links</h4>
+                    <a href="index.html"><i class="fas fa-angle-right me-2"></i> Home</a>
+                    <a href="about.html"><i class="fas fa-angle-right me-2"></i> About Us</a>
+                    <a href="contactus.html"><i class="fas fa-angle-right me-2"></i> Contact Us</a>
+                    <a href="services.html"><i class="fas fa-angle-right me-2"></i> Our services</a>
+                </div>
+                <div class="footer-item">
+                    <h4>Rent 24 Services</h4>
+                    <a href="services.html"><i class="fas fa-angle-right me-2"></i> Accommodation</a>
+                    <a href="services.html"><i class="fas fa-angle-right me-2"></i> Construction</a>
+                    <a href="services.html"><i class="fas fa-angle-right me-2"></i> Fashion</a>
+                    <a href="services.html"><i class="fas fa-angle-right me-2"></i> See more gadgets</a>
+                </div>
+                <div class="footer-item">
+                    <h4>Contact Info</h4>
+                    <a href="contactus.html"><i class="fa fa-map-marker-alt me-2"></i> Awka Anambra, Nigeria</a>
+                    <a href="contactus.html"><i class="fas fa-envelope me-2"></i> rent24nigeria@gmail.com</a>
+                    <a href="contactus.html"><i class="fas fa-phone me-2"></i>+234 90 400 800 78</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="copyright">
+            <div id="copyright">
+                <p><a href="#"></i>Rent24Nigeria</a>, All rights reserved.</p>
+                <div id="copyrightt">
+                    <p><a href="https://wa.me/2349040080078"><i class="fa-brands fa-whatsapp"></i></a></p>
+                    <p><a href="https://www.instagram.com/rent24nigeria?igsh=emJ4am00MXUzcTRi"><i
+                                class="fa-brands fa-instagram"></i></a></p>
+                    <p><a href="https://www.facebook.com/Rent24Nigeria?mibextid=ZbWKwL"><i
+                                class="fa-brands fa-facebook-f"></i></a></p>
+                    <p><i class="fa-brands fa-x-twitter"></i><a
+                            href="https://x.com/Rent24Nigeria?t=wrRns5MFgG_puZ018Zxnsw&s=09"></a></p>
+                </div>
+            </div>
+        </section>
+</body>
+
+</html>
